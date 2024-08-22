@@ -14,11 +14,13 @@ async function init() {
         setupStore(products);
     }
 
-    const featured = store.map((product) => {
-        if (product) {
+    const featured = store.filter((product) => {
+        if (product.featured === true) {
             return product;
         }
     });
+    
+    display(featured, getElement(".featured-center"));
 }
 
 window.addEventListener("DOMContentLoaded", init);
