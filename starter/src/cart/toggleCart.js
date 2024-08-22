@@ -13,3 +13,4 @@ closeCartBtn.addEventListener("click", function () {
 });
 
 export const openCart = () => {};
+
