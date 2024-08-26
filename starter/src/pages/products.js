@@ -13,4 +13,5 @@ import { store } from "../store.js";
 import display from "../displayProducts.js";
 import { getElement } from "../utils.js";
 
+setupSearch(store);
 display(store, getElement(".products-container"));
